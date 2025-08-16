@@ -22,12 +22,6 @@
 			<version>5.5.1</version>
 
 		</dependency>
-		<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>json-schema-validator</artifactId>
-			<version>5.5.1</version>
-
-		</dependency>
 
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -121,7 +115,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<pluginManagement>
+		
 
 			<plugins>
 				<plugin>
@@ -142,6 +136,5 @@
 				</plugin>
 
 			</plugins>
-		</pluginManagement>
 	</build>
 </project>
