@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="API Regression Test Suite" verbose="4">
+	<listeners>
+		<listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
+	</listeners>
+	<test name="Gorest API Test - Get Test">
+		<classes>
+			<class name="com.qa.api.gorest.tests.GetUserTest" />
+		</classes>
+	</test>
+	<test name="Gorest API Test - GetAUserWithDeserializationTest Test">
+		<classes>
+			<class
+				name="com.qa.api.gorest.tests.GetAUserWithDeserializationTest" />
+		</classes>
+	</test>
+	<test name="Gorest API Test - Create Test">
+		<classes>
+			<class name="com.qa.api.gorest.tests.CreateUserTest" />
+		</classes>
+	</test>
+	<test name="Gorest API Test - Delete Test">
+		<classes>
+			<class name="com.qa.api.gorest.tests.DeleteUserTest" />
+		</classes>
+	</test>
+	<test name="Gorest API Test - Update Test">
+		<classes>
+			<class name="com.qa.api.gorest.tests.UpdateUserTest" />
+		</classes>
+	</test>
+
+	<test name="Contacts API Test - Get Contact Test">
+		<classes>
+			<class name="com.qa.api.contacts.tests.GetCallTests" />
+		</classes>
+	</test>
+
+	<test name="Contacts API Test - Delete Contact Test">
+		<classes>
+			<class name="com.qa.api.contacts.tests.DeleteCallTests" />
+		</classes>
+	</test>
+
+	<test name="Contacts API Test - Update  Contact Patch Test">
+		<classes>
+			<class name="com.qa.api.contacts.tests.PatchCallTests" />
+		</classes>
+	</test>
+
+	<test name="Contacts API Test - Create Contact Test">
+		<classes>
+			<class name="com.qa.api.contacts.tests.PostCallTest" />
+		</classes>
+	</test>
+
+	<test name="Contacts API Test - Update Contact Test">
+		<classes>
+			<class name="com.qa.api.contacts.tests.PutCallTest" />
+		</classes>
+	</test>
+
+	<test name="Product API Test - get Product Test">
+		<classes>
+			<class name="com.qa.api.products.tests.ProductAPITest" />
+		</classes>
+	</test>
+
+	<test name="Product API Test - get ProductAPTTestWithJsonPath Test">
+		<classes>
+			<class name="com.qa.api.products.tests.ProductAPTTestWithJsonPath" />
+		</classes>
+	</test>
+
+	<test name="Amadeus API Test - get Flight of Amadeus Test">
+		<classes>
+			<class name="com.qa.amadeus.tests.AmadeusAPITest" />
+		</classes>
+	</test>
+
+
+	<test name="Basic Auth API Test - Basic Authentication Test">
+		<classes>
+			<class name="com.qa.api.basicauth.tests.BasicAuthTest" />
+		</classes>
+	</test>
+
+	<test name="Circuit  API Test - Circuit API with XMl Test">
+		<classes>
+			<class name="com.qa.api.circuit.tests.CircuitApiWithXmlTest" />
+		</classes>
+	</test>
+</suite> <!--
+Suite -->
